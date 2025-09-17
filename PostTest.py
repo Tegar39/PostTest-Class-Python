@@ -1,26 +1,26 @@
 class Main:
-    def main():
+    def main(self):
         pass
 
-    def uiLogin():
+    def uiLogin(self):
         pass
 
-    def uiMenu():
+    def uiMenu(self):
         pass
 
-    def uiHitungPembayaran():
+    def uiHitungPembayaran(self):
         pass
 
-    def uiCetakStruk():
+    def uiCetakStruk(self):
         pass
 #======================================================
 class HitungPembayaran:
-    def __init__(self, idMenu, namaMenu, harga, jumlah, totalHarga):
+    def __init__(self, idMenu: str, namaMenu: str, harga: float, jumlah: int, totalHarga: float):
         self.idMenu=idMenu
         self.namaMenu=namaMenu
         self.harga=harga
         self.jumlah=jumlah
-        self.total=harga*jumlah
+        self.total=self.harga*self.jumlah
         self.totalHarga=totalHarga
     
     def insertPembayaran(self):
@@ -37,17 +37,23 @@ class HitungPembayaran:
 
 #======================================================
 class PembayaranTunai:
-    def hitungTotalHarga():
+    def __init__(self):
+        pass
+
+    def hitungTotalHarga(self):
         pass
 
 #======================================================
 class PembayaranByCard:
-    def hitungTotalHarga():
+    def __init__(self):
+        pass
+
+    def hitungTotalHarga(self):
         pass
 
 #======================================================
 class TabelHitungPembayaran:
-    def __init__(self, idMenu, namaMenu, harga, jumlah, totalHarga):
+    def __init__(self, idMenu: str, namaMenu: str, harga: float, jumlah: int, totalHarga: float):
         self.idMenu=idMenu
         self.namaMenu=namaMenu
         self.harga=harga
@@ -55,113 +61,113 @@ class TabelHitungPembayaran:
         self.total=harga*jumlah
         self.totalHarga=totalHarga
 
-    def setidMenu():
+    def setidMenu(self):
         pass
         
-    def getidMenu():
+    def getidMenu(self):
         pass
         
-    def setnamaMenu():
+    def setnamaMenu(self):
         pass
         
-    def getnamaMenu():
+    def getnamaMenu(self):
         pass
         
-    def setHarga():
+    def setHarga(self):
         pass
 
-    def getHarga():
+    def getHarga(self):
         pass
         
-    def setJumlah():
+    def setJumlah(self):
         pass
     
-    def getJumlah():
+    def getJumlah(self):
         pass
     
-    def setTotalHarga():
+    def setTotalHarga(self):
         pass
         
-    def getTotalHarga():
+    def getTotalHarga(self):
         pass
         
 #======================================================
 class TabelPembayaranByCard:
-    def __init__(self, idCard, jenisCard, namaBank, totalHarga):
+    def __init__(self, idCard: str, jenisCard: str, namaBank: str, totalHarga: float):
         self.idCard=idCard
         self.jenisCard=jenisCard
         self.namaBank=namaBank
         self.totalHarga=totalHarga
 
-    def setidCard():
+    def setidCard(self):
         pass
 
-    def getidCard():
+    def getidCard(self):
         pass
 
-    def setJenisCard():
+    def setJenisCard(self):
         pass
 
-    def getJenisCard():
+    def getJenisCard(self):
         pass
 
-    def setnamaBank():
+    def setnamaBank(self):
         pass
 
-    def getnamaBank():
+    def getnamaBank(self):
         pass
 
-    def setTotalHarga():
+    def setTotalHarga(self):
         pass
 
-    def getTotalHarga():
+    def getTotalHarga(self):
         pass
 
 #======================================================
 class CetakStruk:
-    def cetakStruk():
+    def cetakStruk(self):
         pass
 
 #======================================================
 class TcetakStruk:
-    def __init__(self, noStruk, totalHarga):
+    def __init__(self, noStruk: str, totalHarga: float):
         self.noStruk=noStruk
         self.totalHarga=totalHarga
         
 #======================================================
 class LoginKasir:
-    def __init__(self, username, password):
+    def __init__(self, username: str, password: str):
         self.username=username
         self.password=password
 
-    def validasiLogin():
+    def validasiLogin(self):
         pass
 
-    def logout():
+    def logout(self):
         pass
 
 #======================================================
 class KoneksiDatabase:
-    def __init__(self, host, database, userName, password):
+    def __init__(self, host: str, database: str, userName: str, password: str):
         self.host=host
         self.database=database
         self.userName=userName
         self.password=password
 
-    def membukaKoneksi():
+    def membukaKoneksi(self):
         pass
 
-    def eksekusiQuerySelect():
+    def eksekusiQuerySelect(self):
         pass
 
-    def eksekusiQueryInsert():
+    def eksekusiQueryInsert(self):
         pass
 
-    def eksekusiQueryUpdate():
+    def eksekusiQueryUpdate(self):
         pass
 
-    def eksekusiQueryDelete():
+    def eksekusiQueryDelete(self):
         pass
 
-    def tutupKoneksi():
+    def tutupKoneksi(self):
         pass
